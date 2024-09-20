@@ -1,0 +1,247 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body, html{
+        height: 100%;
+    }
+
+   .login-container, .registration-container, .forgot-container{
+       background-image: url('images/login-background.jpg');   
+       background-size: cover;
+       background-repeat: no-repeat;
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100%;  
+   }
+
+   .registration-container{
+       background-image: url('images/registration-background.jpg');   
+   }
+
+   .forgot-container{
+       background-image: url('images/forgot-background.jpg');
+    
+   }
+
+   .box, .registration-box, .forgot-box{
+       width: 24%;
+       display: flex;
+       flex-direction: column;
+       background: transparent;
+       color: white;
+       backdrop-filter: blur(25px);
+       padding: 40px 50px;
+       border: 1px solid rgb(255, 255, 255);
+       border-radius: 10px;
+       outline: none;
+      
+   }
+
+   .registration-box{
+        width: 620px;
+   }
+
+   .forgot-box{
+        width: 460px;
+   }
+
+   /*header*/
+   .header, .registration-signup, .forgot-header{
+        font-size: 50px;
+        margin: 0, 0, 100px, 0;
+        text-align: center;
+        font-weight: bold;
+        margin: 0 0 20px 0;
+    }
+
+    .forgot-header{
+        font-size: 32px;
+    }
+
+    .forgot-statement{
+        text-align: center;
+        color: black;
+        font-weight: 500;
+    }
+
+    /*input fields*/
+   .input-field, .registration-inputfield, .forgot-inputfield{
+       height: 50px;
+       width: 100%;
+       margin: 18px 0;
+       position: relative;
+       background-color: transparent;
+       display: flex;
+       justify-content: space-between;
+   }
+
+   .registration-inputfield-box{
+        position: relative;
+        width: 48%;
+   }
+
+   .registration-inputfield i, .registration-inputfield-box i{
+         pointer-events: none;
+   }
+
+   .registration-inputfield-box input{
+        width: 100%;
+        margin: 0;
+   }
+
+   .forgot-inputfield{
+      margin: 50px 0 10px 0;
+   }
+
+     /*button field*/
+   .submit-field, .registration-buttonfield, .forgot-buttonfield{
+       height: 5%;
+       width: 100%;
+       margin: 18px 0;
+       position: relative; 
+    
+   }
+
+     /*input*/
+   .firstname, .lastname{
+        height: 100%;
+        width: 48%;
+        height: 100%;
+        outline: none;
+        border: 1px solid white;
+        border-radius: 40px;
+        color: white;
+        font-size: 18px;
+        background-color: transparent;
+        padding: 0 0 0 50px;
+    }   
+
+    .lastname{
+        margin: 0 0 0 13px;
+    }
+   
+
+   .input, .username, .password, .confirmpassword, .forgot-username{
+       height: 100%;
+       width: 100%;
+       outline: none;
+       border: 1px solid rgb(255, 255, 255);
+       border-radius: 40px;
+       background-color: rgb(247, 247, 247);      
+       color: rgb(255, 255, 255);
+       font-size: 18px;
+       padding: 20px 45px 20px 50px;
+       background-color: transparent;
+   }
+
+   .firstname::placeholder, .lastname::placeholder, .username::placeholder,.password::placeholder, .confirmpassword::placeholder{
+       color: rgb(81, 81, 81);
+   }
+
+     /*buttons*/
+   .submit-button, .register-button, .forgot-button{
+       border: none;
+       height: 50px;
+       width: 100%;
+       border-radius: 40px;
+       background-color: rgb(253, 250, 252);
+       color: rgb(82, 81, 81);
+       font-size: 16px;
+       outline: none;
+       font-weight: bold;
+       margin: 0 0;
+       cursor: pointer;
+       background-color: #ffffff; 
+       background-image: linear-gradient(to right, #f3f3f3, #ffd3fb); 
+       transition: background 0.3s ease;
+   }
+
+   .register-button{
+       background-image: linear-gradient(to right, #f3f3f3, #e499fd); 
+       transition: background 0.10s ease;
+   }
+
+
+   .submit-button:hover{
+       background-image: linear-gradient(to right, #ffd3fb, #f2f1f2); 
+   }
+
+   .register-button:hover{
+        background-image: linear-gradient(to right, #fd95fd, #f2f1f2); 
+    }
+
+    
+   .forgot-button:hover{
+    background-image: linear-gradient(to right, #ffd3fb, #f2f1f2); 
+    }
+
+
+   i{
+     position: absolute;
+       top: 16px;
+       left: 25px;
+       color: rgb(254, 254, 254);
+
+   }
+
+     /*footer*/
+   .bottom{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       color: rgb(250, 250, 250);
+       margin: 20px, 0, 0, 0;
+   }
+
+   .left label{
+       margin: 0 0 0 6px;
+       color: #fdf6f6;
+   }
+      
+   .right a{
+       color: #ffffff;
+       text-decoration: none;
+       font-weight: 500;
+   }
+
+   .right a:hover{
+       text-decoration: underline;
+   }
+
+   .sign-up, .registration-login, .forgot-login{
+       text-align: center;
+       margin: 5px 0;
+       font-weight: 500;
+       color: rgb(255, 255, 255);
+   }
+
+   .register, .login, .forgot{
+       font-weight: 600;
+       text-decoration: none;
+       color: rgb(247, 70, 217);
+   }
+   
+   .login{
+        color: rgb(69, 7, 106);
+   }
+
+   .forgot{
+        color: rgb(232, 96, 194);
+   }
+   
+   .registration-login a:hover,  .sign-up a:hover, .forgot-login a:hover{
+        text-decoration: underline;
+    }
+
+    
+ 
+
+    
+
+
